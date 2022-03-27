@@ -1,13 +1,13 @@
 # TK 1 Kel 1 PBP Genap 2021-2022
 ## Anggota Kelompok 1:
 - Khairinka Rania Lizadhi 2006597254
-- Elang Permana -
-- Satriaji Najha Darmawan -
+- Elang Permana 2006520405
+- Satriaji Najha Darmawan 2006596226
 - Adam Ghaviyasha 2006482584
 - Patrick Alexander 1906398710
 - Ridho Mulia 2006597866
-- Fauzan Daffa Raditya -
-- Hadist Fadhillah -
+- Fauzan Daffa Raditya 2106752363
+- Hadist Fadhillah 2006463490
 
 ## _Web app_ olahraga
 Pada TK 1, kelompok kami akan membuat _web app_ seputar olahraga dengan daftar fitur berikut:
