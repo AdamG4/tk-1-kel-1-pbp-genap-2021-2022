@@ -17,12 +17,15 @@ Web app kami ditujukan untuk tiga tipe persona, yaitu:
 3. User yang ingin lebih tau trivia seputar olahraga dan atlet-atletnya
 
 Pemetaan dari tiap _user persona_ ini terhadap setiap fitur kurang lebih adalah sebagai berikut:
+
 **User Persona #1**
 - Kumpulan berita olahraga
 - _Scoreboard_ pertandingan
 - _Schedule_ pertandingan
+
 **User Persona #2**
 - Forum olahraga
+
 **User Persona #3**
 - _Game_/trivia
 - Profil atlet
