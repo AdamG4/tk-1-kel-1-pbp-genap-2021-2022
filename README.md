@@ -1,10 +1,10 @@
 # TK 1 Kel 1 PBP Genap 2021-2022
 ## Anggota Kelompok 1:
 - Khairinka Rania Lizadhi 2006597254
-- Elang Permana -
+- Elang Permana 2006520405
 - Satriaji Najha Darmawan -
 - Adam Ghaviyasha 2006482584
-- Patrick Alexander 1906398710
+- Patrick Alexander 1906398710a
 - Ridho Mulia 2006597866
 - Fauzan Daffa Raditya -
 - Hadist Fadhillah -
