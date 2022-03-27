@@ -1,6 +1,15 @@
 # TK 1 Kel 1 PBP Genap 2021-2022
+## Anggota Kelompok 1:
+- Khairinka Rania Lizadhi
+- Elang Permana
+- Satriaji Najha Darmawan
+- Adam Ghaviyasha
+- Patrick Alexander
+- Ridho Mulia
+- Fauzan Daffa Raditya
+- Hadist Fadhillah
 
-## Web app olahraga
+## _Web app_ olahraga
 Pada TK 1, kelompok kami akan membuat _web app_ seputar olahraga dengan daftar fitur berikut:
 - Kumpulan berita olahraga
 - _Scoreboard_ pertandingan
@@ -9,6 +18,7 @@ Pada TK 1, kelompok kami akan membuat _web app_ seputar olahraga dengan daftar f
 - _Game_/trivia
 - Profil atlet
 - _Ranking_ atlet
+_Web app_ ini akan memberikan manfaat melalui hiburan seputar olahraga serta game yang disediakan. Para pengguna yang memiliki rasa ingin tahu yang tinggi juga dapat mengenal para atlet favoritnya lebih dalam lagi. Selain itu, pengguna juga mendapatkan wadah untuk saling berinteraksi.
 
 ## User Persona
 Web app kami ditujukan untuk tiga tipe persona, yaitu:
