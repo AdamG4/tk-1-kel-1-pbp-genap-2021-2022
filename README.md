@@ -1,7 +1,7 @@
 # TK 1 Kel 1 PBP Genap 2021-2022
 
 ## Web app olahraga
-Pada TK 1, kelompok kami akan membuat _web app _seputar olahraga dengan daftar fitur berikut:
+Pada TK 1, kelompok kami akan membuat _web app_ seputar olahraga dengan daftar fitur berikut:
 - Kumpulan berita olahraga
 - _Scoreboard_ pertandingan
 - _Schedule_ pertandingan
