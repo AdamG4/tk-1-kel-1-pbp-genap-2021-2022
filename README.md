@@ -18,6 +18,7 @@ Pada TK 1, kelompok kami akan membuat _web app_ seputar olahraga dengan daftar f
 - _Game_/trivia
 - Profil atlet
 - _Ranking_ atlet
+
 _Web app_ ini akan memberikan manfaat melalui hiburan seputar olahraga serta game yang disediakan. Para pengguna yang memiliki rasa ingin tahu yang tinggi juga dapat mengenal para atlet favoritnya lebih dalam lagi. Selain itu, pengguna juga mendapatkan wadah untuk saling berinteraksi.
 
 ## User Persona
