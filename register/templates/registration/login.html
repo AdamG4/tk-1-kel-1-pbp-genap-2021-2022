@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login to your account</title>
+  </head>
+  <body>
+    <li><a href="/">Back</a></li>
+    <br>Don't have an account?
+    <li><a href="/register">Register here</a></li>
+    <form action="" method="POST">{% csrf_token %}
+      <ul>
+        {{ form.as_p }}
+      </ul>
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

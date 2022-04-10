@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forums</title>
+  </head>
+  <body>
+    <ul>
+      {% if user.is_authenticated %}
+        <li><a href="/forums/post-to-forum">Post to forum</a></li>
+      {% else %}
+        <li><a href="/login">Login to post</a></li>
+      {% endif %}
+      <li><a href="/">Back</a></li>
+        {% for post in posts %}
+          <br>{{ post.title }}
+          <br>{{ post.author }} - {{ post.date }}
+          <br>
+          {% if post.reply != "-" %}
+          <br> Replying to: {{ post.reply }}
+          {% endif %}
+          <br>
+          <br>{{ post.content }}
+          <br>
+        {% endfor %}
+    </ul>
+  </body>
+</html>

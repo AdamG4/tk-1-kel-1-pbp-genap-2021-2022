@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Post To Forum</title>
+  </head>
+  <body>
+    <li><a href="/forums">Back</a></li>
+    <form action="" method="POST">{% csrf_token %}
+      <ul>
+        {{ post_form.as_p }}
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
