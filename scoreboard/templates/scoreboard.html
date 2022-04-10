@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <ul>
+      {% if user.is_authenticated %}
+        <li><a href="/forums/post-score">Post score</a></li>
+      {% else %}
+        <li><a href="/login">Login to post</a></li>
+      {% endif %}
+      <li><a href="/">Back</a></li>
+        {% for score in scoreboard %}
+            <br>{{ score.team_1 }} [{{ score.score_1 }}] - [{{ score.score_2 }}] {{ score.team_2 }}
+            <br>{{ score.date }}
+            <br>
+        {% endfor %}
+    </ul>
+  </body>
+</html>

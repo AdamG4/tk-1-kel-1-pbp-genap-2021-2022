@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>News</title>
+  </head>
+  <body>
+    <ul>
+      {% if user.is_authenticated %}
+        <li><a href="/forums/post-news-article">Post news article</a></li>
+      {% else %}
+        <li><a href="/login">Login to post</a></li>
+      {% endif %}
+      <li><a href="/">Back</a></li>
+        {% for article in articles %}
+            <br>{{ article.title }}
+            <br>{{ article.author }} - {{ article.date }}
+            <br>
+            <br>{{ article.content }}
+            <br>
+        {% endfor %}
+    </ul>
+  </body>
+</html>

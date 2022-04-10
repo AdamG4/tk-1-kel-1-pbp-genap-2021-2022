@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profiles</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Back</a></li>
+    </ul>
+    {% for profile in profiles %}
+        <br>{{ profile.name }}
+        <br><img src="media/{{ profile.image }}" alt="profile image" width="250" height="250">
+        <br>
+        <br>{{ profile.content }}
+        <br>Popularity: {{ profile.votes }}
+        <br>
+    {% endfor %}
+  </body>
+</html>
