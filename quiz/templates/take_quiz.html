@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <head>
+    <meta charset="UTF-8" />
+    <title>Post Score</title>
+  </head>
+  <body>
+    <div class="indent-2">
+      <form action="" method="POST">{% csrf_token %}
+        <br>1. What's the diameter of a basketball hoop in inches?
+        <br>A. 18 inches
+        <br>B. 17 inches
+        <br>C. 16 inches
+        <br>D. 15 inches
+        <br>E. 14 inches
+        <br>
+        <br>{{ post_form.q0.errors }}
+        <br>Answer:
+        <br>{{ post_form.q0 }}
+        <br>
+        <br>2. The Olympics are held every how many years?
+        <br>A. 1 year
+        <br>B. 2 years
+        <br>C. 3 years
+        <br>D. 4 years
+        <br>E. 5 years
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q1 }}
+        <br>
+        <br>3. What sport is best known as the 'king of sports'?
+        <br>A. American football
+        <br>B. Basketball
+        <br>C. Cross-country
+        <br>D. Soccer
+        <br>E. Golf
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q2 }}
+        <br>
+        <br>4. What do you call it when a bowler makes three strikes in a row?
+        <br>A. Chicken dinner
+        <br>B. Turkey
+        <br>C. Hattrick
+        <br>D. Trigol
+        <br>E. Triple kill
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q3 }}
+        <br>
+        <br>5. What's the national sport of Canada?
+        <br>A. Hockey
+        <br>B. Cricket
+        <br>C. Lacrosse
+        <br>D. Snowboarding
+        <br>E. Elk hunting
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q4 }}
+        <br>
+        <br>6. How many dimples does an average golf ball have?
+        <br>A. 12
+        <br>B. 36
+        <br>C. 125
+        <br>D. 336
+        <br>E. 512
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q5 }}
+        <br>
+        <br>7. What country has competed the most times in the Summer Olympics yet hasn't won a gold medal?
+        <br>A. Indonesia
+        <br>B. Malaysia
+        <br>C. Thailand
+        <br>D. The Philippines
+        <br>E. Vietnam
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q6 }}
+        <br>
+        <br>8. The classic 1980 movie called Raging Bull is about which real-life boxer?
+        <br>A. Jake LaMotta
+        <br>B. Jack Ma
+        <br>C. Mike Tyson
+        <br>D. Muhammad Ali
+        <br>E. Muhammad Ridwan
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q7 }}
+        <br>
+        <br>9. How many medals did China win at the Beijing Olympics?
+        <br>A. 5
+        <br>B. 9
+        <br>C. 7
+        <br>D. 4
+        <br>E. 100
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q8 }}
+        <br>
+        <br>10. In the 1971 Olympics, Nadia Comaneci was the first gymnast to score a perfect score. What country was she representing?
+        <br>A. Rome
+        <br>B. Romania
+        <br>C. Lithuania
+        <br>D. Greece
+        <br>E. Turkmenistan
+        <br>
+        <br>Answer:
+        <br>{{ post_form.q9 }}
+        <br>
+        <br>Your name:
+        <br>{{ post_form.name }}
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+      </form>
+      <br>
+      <div class="text-muted">
+        Questions taken from: <a href="https://parade.com/1182514/marynliles/sports-trivia/">parade.com</a>
+      </div>
+    </div>
+  </body>
+{% endblock %}

@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>News</title>
-  </head>
-  <body>
-    <ul>
-      {% if user.is_authenticated %}
-        <li><a href="/forums/post-news-article">Post news article</a></li>
-      {% else %}
-        <li><a href="/login">Login to post</a></li>
-      {% endif %}
-      <li><a href="/">Back</a></li>
-        {% for article in articles %}
-            <br>{{ article.title }}
-            <br>{{ article.author }} - {{ article.date }}
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+  <div class="indent-1">
+  {% if user.is_authenticated %}
+    <br><a href="/news/post-news-article">Post news article</a>
+  {% else %}
+    <br><a href="/login">Login to post</a>
+  {% endif %}
+  </div>
+  <br>
+  <div class="indent-2">
+    <div class="card-columns">
+      {% for article in articles %}
+        <div class="card" style="width: 35rem;">
+          <h5 class="card-header text-center">
+            {{ article.title }}
+          </h5>
+          <div class="card-body text-justify">
+            {{ article.author }}
             <br>
-            <br>{{ article.content }}
-            <br>
-        {% endfor %}
-    </ul>
-  </body>
-</html>
+            <br>{{ post.content }}
+          </div>
+          <div class="card-footer text-muted text-center">
+            {{ article.date }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+{% endblock %}
