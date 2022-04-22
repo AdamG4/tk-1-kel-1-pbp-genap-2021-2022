@@ -1,28 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Forums</title>
-  </head>
+{% extends 'base.html' %}
+
+{% block content %}
   <body>
-    <ul>
+    <div class="indent-1">
       {% if user.is_authenticated %}
-        <li><a href="/forums/post-to-forum">Post to forum</a></li>
+        <br><a href="/forums/post-to-forum">Post to forum</a>
       {% else %}
-        <li><a href="/login">Login to post</a></li>
+        <br><a href="/login">Login to post</a>
       {% endif %}
-      <li><a href="/">Back</a></li>
-        {% for post in posts %}
-          <br>{{ post.title }}
-          <br>{{ post.author }} - {{ post.date }}
-          <br>
+    </div>
+    <br>
+    {% for post in posts %}
+      <div class="card">
+        <h5 class="card-header text-center">
+          {{ post.title }}
+        </h5>
+        <div class="card-body text-justify">
+          {{ post.author }}
           {% if post.reply != "-" %}
-          <br> Replying to: {{ post.reply }}
+            <br>
+            <br> Replying to: {{ post.reply }}
           {% endif %}
           <br>
           <br>{{ post.content }}
-          <br>
-        {% endfor %}
-    </ul>
+        </div>
+        <div class="card-footer text-muted text-center">
+          {{ post.date }}
+        </div>
+      </div>
+    {% endfor %}
   </body>
-</html>
+{% endblock %}

@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Profiles</title>
-  </head>
+{% extends 'base.html' %}
+
+{% block content %}
   <body>
-    <ul>
-      <li><a href="/">Back</a></li>
-    </ul>
+    <div class="card-columns">
     {% for profile in profiles %}
-        <br>{{ profile.name }}
-        <br><img src="media/{{ profile.image }}" alt="profile image" width="250" height="250">
-        <br>
-        <br>{{ profile.content }}
-        <br>Popularity: {{ profile.votes }}
-        <br>
+      <div class="card indent-2" style="width: 18rem;">
+      <br><img src="media/{{ profile.image }}" alt="profile image" width="286" height="180">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ profile.name }}</h5>
+          <p class="card-text">{{ profile.content }}</p>
+        </div>
+        <div class="card-footer text-center">
+          Popularity: {{ profile.votes }}
+        </div>
+      </div>
     {% endfor %}
   </body>
-</html>
+{% endblock %}
