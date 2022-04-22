@@ -8,6 +8,7 @@ import profiles.urls as profiles
 import forums.urls as forums
 import quiz.urls as quiz
 import game.urls as game
+import ranking.urls as ranking
 
 from register import views as v
 
@@ -24,5 +25,6 @@ urlpatterns = [
     path('profiles/', include(profiles)),
     path('forums/', include(forums)),
     path('quiz/', include(quiz)),
-    path('game/', include(game))
+    path('game/', include(game)),
+    path('ranking/', include(ranking))
 ]

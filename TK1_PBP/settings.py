@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'profiles',
     'forums',
     'quiz',
-    'game'
+    'game',
+    'ranking'
 ]
 
 MIDDLEWARE = [
