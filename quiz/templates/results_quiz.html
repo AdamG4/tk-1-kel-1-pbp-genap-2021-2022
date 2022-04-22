@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+  <div class="indent-1">
+    <div class="card-columns">
+      {% for answer in answers %}
+        <div class="card" style="width: 18rem;">
+          <h5 class="card-header text-center">
+            {{ answer.name }}
+          </h5>
+          <div class="card-body text-justify">
+            <ul>
+              <li>1: {% if answer.q0 == 'A' %} correct {% else %} false {% endif %}</li>
+              <li>2: {% if answer.q1 == 'D' %} correct {% else %} false {% endif %}</li>
+              <li>3: {% if answer.q2 == 'B' %} correct {% else %} false {% endif %}</li>
+              <li>4: {% if answer.q3 == 'C' %} correct {% else %} false {% endif %}</li>
+              <li>5: {% if answer.q4 == 'C' %} correct {% else %} false {% endif %}</li>
+              <li>6: {% if answer.q5 == 'D' %} correct {% else %} false {% endif %}</li>
+              <li>7: {% if answer.q6 == 'D' %} correct {% else %} false {% endif %}</li>
+              <li>8: {% if answer.q7 == 'A' %} correct {% else %} false {% endif %}</li>
+              <li>9: {% if answer.q8 == 'E' %} correct {% else %} false {% endif %}</li>
+              <li>10: {% if answer.q9 == 'B' %} correct {% else %} false {% endif %}</li>
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+{% endblock %}
