@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Football Player Ranking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container p-5 my-5 bg-dark text-white">
+    <h1 class="text-center">Football Player Ranking</h1>
+    <h3 class="text-center">(Fifa Best Player 2022)</h3>
+    <div class="container pt-3 row">
+      <div class="col">Rank</div>
+      <div class="col">Name</div>
+      <div class="col">Age</div>
+      <div class="col">League</div>
+      <div class="col">Nationality</div>
+    </div>
+    <hr></hr>
+    {% for x in player %}
+    <div class="container pt-3 row">
+      <div class="col">{{x.id}}</div>
+      <div class="col">.{{x.fullname}}</div>
+      <div class="col">.{{x.age}}</div>
+      <div class="col">.{{x.league}}</div>
+      <div class="col">.{{x.nationality}}</div>
+    </div>
+    {% endfor %}
+    <hr></hr>
+    <div class="container pt-3 row">
+      <img class="float-start rounded col" src="images/robert-lewandowski.jpg" alt="Robert Lewandowski">
+      <img class="float-none rounded col" src="images/lionel-messi.jpg" alt="Lionel Messi">
+      <img class="float-end rounded col" src="images/mohammed-salah.jpg" alt="Mohammed Salah">
+    </div>
+  </div>
+</body>
+</html>
